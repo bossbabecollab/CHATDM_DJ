@@ -64,6 +64,11 @@ Check each box as you go.
       `NEXTAUTH_URL` = your live URL (exactly as shown, no trailing slash)
 - [ ] Go to Vercel → Deployments → click **Redeploy** (so NEXTAUTH_URL takes effect)
 - [ ] Confirm the redeploy succeeds ✓
+- [ ] Run smoke test from your terminal to confirm the live URL is healthy:
+      ```
+      node scripts/smoke-test.mjs https://<YOUR_VERCEL_URL>
+      ```
+      All 6 checks should show ✅. Fix any ❌ before continuing.
 
 ---
 
