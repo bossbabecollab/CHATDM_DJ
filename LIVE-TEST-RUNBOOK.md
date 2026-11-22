@@ -142,6 +142,34 @@ Check each box as you go.
 
 ---
 
+## PART 7 — MIX Test Campaign Copy
+
+Use this copy when you set up the test campaign in Part 6.
+Swap `[YOUR MIX LINK]` with the real URL before you go live.
+
+### Public comment reply
+> (What your automation posts back on the comment thread)
+
+```
+glad you're vibing with it 🎵 check your DMs!
+```
+
+### DM text
+> (What gets sent to @inn3rbliss's inbox)
+
+```
+hey! 👋 here's the mix you asked about — [YOUR MIX LINK]
+
+let me know what you think 🎧
+```
+
+**Notes:**
+- Keep `[YOUR MIX LINK]` as a plain URL (no markdown) so Instagram renders it as a tap-able link
+- The comment reply is intentionally vague — no link in public comments (Meta policy)
+- DM goes out only after the comment trigger fires, so the flow is: comment → public reply → DM
+
+---
+
 ## Done ✓
 
 All green → the live stack is working end-to-end.
