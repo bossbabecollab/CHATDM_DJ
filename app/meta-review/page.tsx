@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import LegalShell from "@/components/legal-shell";
 
 export const metadata: Metadata = {
-  title: "Meta App Review Support - OpenReply",
+  title: "Meta App Review Support - CHATDM",
   description:
-    "Meta App Review notes for OpenReply's official Instagram private reply workflow.",
+    "Meta App Review notes for CHATDM's official Instagram private reply workflow.",
 };
 
 export default function MetaReviewPage() {
   return (
     <LegalShell
       title="Meta App Review Support"
-      description="OpenReply is designed for Instagram professional accounts that want to send private replies after keyword comments on their own posts or reels."
+      description="CHATDM is designed for Instagram professional accounts that want to send private replies after keyword comments on their own posts or reels."
       updatedAt="May 24, 2026"
     >
       <section>

@@ -1,4 +1,4 @@
-/* Public site design system. Warm paper, ink text, one orange accent.
+/* Public site design system. CHATDM purple accent #673DE6.
    Geist for text, Inter Light for the wordmark only.
    Spacing: 2 4 8 12 16 24 32 40 48 64 80 96. Radius: 4 6 8 12 16 24 full. */
 
@@ -11,8 +11,8 @@
   --fg: #22221f;
   --muted: #62625e;
   --dim: #8b8b85;
-  --orange: #c4490c;
-  --peach: #f6e6d8;
+  --orange: #673DE6;
+  --peach: #f1ecfd;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   background: var(--bg);
   color: var(--fg);
@@ -171,7 +171,7 @@
 @media (max-width: 760px) { .hero { padding-top: 48px; } .hero-proof { justify-content: center; } }
 
 .stage {
-  margin-top: 48px; border: 1px solid #ead9c8; background: var(--peach); border-radius: 24px;
+  margin-top: 48px; border: 1px solid #e1d6fc; background: var(--peach); border-radius: 24px;
   padding: 48px 32px 0; overflow: hidden; display: grid; grid-template-columns: 1fr auto 1fr;
   align-items: end; gap: 24px;
 }

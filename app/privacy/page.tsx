@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import LegalShell from "@/components/legal-shell";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - OpenReply",
+  title: "Privacy Policy - CHATDM",
   description:
-    "How OpenReply handles Instagram account data, webhook payloads, billing data, and customer campaign information.",
+    "How CHATDM handles Instagram account data, webhook payloads, billing data, and customer campaign information.",
 };
 
 export default function PrivacyPage() {
   return (
     <LegalShell
       title="Privacy Policy"
-      description="OpenReply helps businesses send Meta-compliant private replies when people comment on connected Instagram posts or reels."
+      description="CHATDM helps music creators, DJs, and brands send Meta-compliant private replies when fans comment on connected Instagram posts or reels."
       updatedAt="May 24, 2026"
     >
       <section>

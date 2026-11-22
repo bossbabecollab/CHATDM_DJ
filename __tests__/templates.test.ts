@@ -8,6 +8,11 @@ import {
 describe("campaign templates", () => {
   it("ships the public launch template set", () => {
     expect(getCampaignTemplateSlugs()).toEqual([
+      "dj-track-id-drop",
+      "dj-guestlist-vip",
+      "dj-booking-rider",
+      "producer-sample-pack",
+      "dj-live-set-recording",
       "dtc-product-link",
       "real-estate-lead-form",
       "fitness-plan",

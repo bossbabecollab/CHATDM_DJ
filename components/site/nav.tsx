@@ -68,11 +68,11 @@ export function SiteNav({
             <Link
               href="/"
               className="wordmark"
-              aria-label="OpenReply home"
+              aria-label="CHATDM home"
               onClick={() => setOpen(false)}
             >
               <LogoMark className="wordmark-mark" />
-              <span>OpenReply</span>
+              <span>CHATDM</span>
             </Link>
             <a
               className="nav-stars"

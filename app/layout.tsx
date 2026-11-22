@@ -3,20 +3,22 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OpenReply - Open source Instagram comment-to-DM automation",
+  title: "CHATDM — Instagram Comment-to-DM for DJs & Music Creators",
   description:
-    "A free, self-hosted ManyChat alternative. Send an Instagram DM automatically when someone comments a keyword on your post or reel, using the official Meta API.",
+    "Turn Instagram reel comments into Spotify streams, ticket sales, track ID drops, and booking inquiries with official Meta API automation.",
   keywords: [
+    "chatdm",
+    "dj instagram automation",
+    "music producer dm automation",
+    "track id comment to dm",
     "instagram automation",
     "comment to DM",
-    "instagram private replies",
-    "social commerce",
-    "manychat alternative",
+    "manychat alternative for musicians",
   ],
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
-    title: "OpenReply",
+    title: "CHATDM",
     statusBarStyle: "black-translucent",
   },
   icons: {

@@ -62,8 +62,9 @@ export default function Sidebar({
           className="px-6 py-5 border-b border-border"
           style={{ paddingTop: "calc(1.25rem + env(safe-area-inset-top))" }}
         >
-          <Link href="/dashboard" className="text-base font-semibold">
-            OpenReply
+          <Link href="/dashboard" className="text-base font-semibold flex items-center gap-2">
+            <span className="w-5 h-5 rounded bg-[#673DE6] text-white flex items-center justify-center font-bold text-xs">C</span>
+            <span>CHAT<span className="text-[#673DE6]">DM</span></span>
           </Link>
         </div>
 

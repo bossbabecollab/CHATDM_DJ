@@ -19,6 +19,136 @@ export interface CampaignTemplate {
 
 export const CAMPAIGN_TEMPLATES: CampaignTemplate[] = [
   {
+    slug: "dj-track-id-drop",
+    title: "Track ID & Spotify Presave Drop",
+    category: "Music & DJ",
+    audience: "DJs and electronic music producers",
+    summary:
+      "When fans comment ID or TRACK on your festival clip or studio reel, instantly DM them the Spotify presave, Soundcloud link, or track name.",
+    goal: "Track ID & music distribution",
+    keywords: ["ID", "TRACK", "SONG", "TUNE"],
+    dmMessage:
+      "Hey {username}! Here is the unreleased ID you asked about from my set: https://spotify.link/your-track Enjoy the tune! 🎧",
+    triggerExample: "ID please!! 🔥",
+    privateReplyPreview:
+      "Hey Alex! Here is the unreleased ID you asked about: spotify.link/your-track",
+    setupMinutes: 2,
+    outcome: "Boost Spotify stream counts, Beatport rankings, and presaves directly from viral reel comments.",
+    bestFor: ["Festival reels", "Studio cookup clips", "Teaser drops", "DJ mix videos"],
+    playbook: [
+      "Post a reel with the best drop or unreleased track moment.",
+      "Add 'Comment ID for the private track link' in your caption.",
+      "Connect CHATDM to deliver your Spotify or Soundcloud link instantly.",
+      "Watch your direct messages convert into loyal daily listeners.",
+    ],
+    metrics: ["Track link clicks", "Spotify presaves", "DM delivery rate"],
+    accent: "rose",
+  },
+  {
+    slug: "dj-guestlist-vip",
+    title: "VIP Guestlist & Ticket Access",
+    category: "Events & Touring",
+    audience: "Touring DJs, nightlife promoters, event curators",
+    summary:
+      "Send discount ticket links, secret venue locations, or limited guestlist spots when fans comment VIP or GUESTLIST.",
+    goal: "Ticket sales & event attendance",
+    keywords: ["VIP", "TICKETS", "GUESTLIST", "PARTY"],
+    dmMessage:
+      "Yo {username}! Here's your exclusive VIP guestlist link for this Saturday's headline set: https://posh.vip/event/tickets See you on the dancefloor! ⚡",
+    triggerExample: "VIP guestlist please",
+    privateReplyPreview:
+      "Yo Jordan! Here's your exclusive VIP guestlist link: posh.vip/event/tickets",
+    setupMinutes: 3,
+    outcome: "Pack venue dancefloors and sell out tier-1 tickets directly through social word-of-mouth.",
+    bestFor: ["Tour date announcements", "Club gig promo", "Festival afterparties"],
+    playbook: [
+      "Record an energetic video announcing your upcoming city or club stop.",
+      "Offer the first 50 commenters VIP or discounted entry.",
+      "Send the ticketing link with one-tap checkout in the DM.",
+      "Track conversions and message guests with door times on event day.",
+    ],
+    metrics: ["Ticket page CTR", "Guestlist claims", "Follower growth"],
+    accent: "cyan",
+  },
+  {
+    slug: "dj-booking-rider",
+    title: "DJ Gig Booking, Press Kit & Tech Rider",
+    category: "Professional Music",
+    audience: "Independent DJs, agents, live performers",
+    summary:
+      "Convert event promoters and club buyers asking for booking info into confirmed gigs by automating your tech rider and calendar link.",
+    goal: "Gig inquiries & promoter conversion",
+    keywords: ["BOOKING", "GIG", "RIDER", "DATES"],
+    dmMessage:
+      "Hey {username}, thanks for reaching out! For bookings, tech rider (CDJ-3000 / DJM-A9), and open tour dates, check out my official portal: https://dj.bio/booking or email booking@yourartistname.com",
+    triggerExample: "Are you available for booking in Chicago?",
+    privateReplyPreview:
+      "Hey Mark! Here is my official booking portal and tech rider: dj.bio/booking",
+    setupMinutes: 4,
+    outcome: "Never lose a lucrative festival, wedding, or club booking inquiry in your crowded DMs.",
+    bestFor: ["Performance clips", "Press photos", "Behind-the-booth reels"],
+    playbook: [
+      "Include a prompt on your bio and reels: 'Promoters: comment BOOKING for availability'.",
+      "Send your EPK (Electronic Press Kit), tech requirements, and booking form.",
+      "Collect venue capacity, date, and budget details automatically.",
+      "Review incoming inquiries in your CHATDM inbox within Meta's 24-hr window.",
+    ],
+    metrics: ["Booking link opens", "EPK downloads", "Direct replies"],
+    accent: "emerald",
+  },
+  {
+    slug: "producer-sample-pack",
+    title: "Free Sample Pack & Serum Presets",
+    category: "Music Production",
+    audience: "Music producers, sound designers, beatmakers",
+    summary:
+      "Grow your producer email list or community by delivering free drum kits, Serum presets, or Ableton project files on comment.",
+    goal: "Lead generation & producer community",
+    keywords: ["PACK", "SERUM", "STEMS", "DRUMS"],
+    dmMessage:
+      "What's up {username}! Grab the free 'Future Bass & House Drums Vol. 1' sample pack right here: https://yourbrand.gumroad.com/l/free-pack Let me know what you cook up with it! 🎹",
+    triggerExample: "PACK please!",
+    privateReplyPreview:
+      "What's up Sam! Grab your free sample pack: gumroad.com/l/free-pack",
+    setupMinutes: 3,
+    outcome: "Turn casual producer viewers into high-intent customers for your sound libraries and courses.",
+    bestFor: ["Tutorial reels", "Beat breakdown videos", "Plugin preset demos"],
+    playbook: [
+      "Showcase a killer synth lead or punchy kick in a 15-second reel.",
+      "Tell producers to comment PACK to download the exact sounds for free.",
+      "Send the direct download link with a follow gate enabled.",
+      "Grow your producer email list and community on autopilot.",
+    ],
+    metrics: ["Download conversions", "Follower gate pass rate"],
+    accent: "amber",
+  },
+  {
+    slug: "dj-live-set-recording",
+    title: "Full Live Set & Soundcloud Mix Drop",
+    category: "Music & DJ",
+    audience: "DJs, podcasters, radio hosts",
+    summary:
+      "Send the full 2-hour HD live set audio recording on YouTube, Apple Podcasts, or Soundcloud when fans comment SET or MIX.",
+    goal: "Long-form content engagement",
+    keywords: ["SET", "MIX", "AUDIO", "RECORDING"],
+    dmMessage:
+      "Hey {username}! Here's the unedited 2-hour live recording from my festival set: https://soundcloud.com/your-artist/live-set Turn it up loud! 🚀",
+    triggerExample: "Where can I hear the full SET?",
+    privateReplyPreview:
+      "Hey David! Here is the full 2-hour festival live set: soundcloud.com/your-artist/live-set",
+    setupMinutes: 2,
+    outcome: "Channel 15-second viral reel attention into 2-hour loyal listener sessions on streaming platforms.",
+    bestFor: ["Festival crowd recaps", "Boiler room style videos", "Radio show clips"],
+    playbook: [
+      "Cut the best 30-second crowd reaction from your live gig.",
+      "Invite viewers to comment SET to get the complete tracklist and unedited recording.",
+      "Deliver the Soundcloud or YouTube URL with a one-click listen button.",
+      "Retain commenters as long-term followers and subscribers.",
+    ],
+    metrics: ["Mix stream clicks", "Tracklist link CTR"],
+    accent: "rose",
+  },
+  {
     slug: "dtc-product-link",
     title: "DTC Product Link Drop",
     category: "Social commerce",

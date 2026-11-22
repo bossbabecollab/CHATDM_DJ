@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import LegalShell from "@/components/legal-shell";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - OpenReply",
+  title: "Terms of Service - CHATDM",
   description:
-    "Terms for using OpenReply's Instagram comment-to-DM campaign software.",
+    "Terms for using CHATDM's Instagram comment-to-DM campaign software.",
 };
 
 export default function TermsPage() {
   return (
     <LegalShell
       title="Terms of Service"
-      description="These terms define acceptable use for OpenReply's hosted Instagram comment-to-DM campaign service."
+      description="These terms define acceptable use for CHATDM's Instagram comment-to-DM automation service."
       updatedAt="May 24, 2026"
     >
       <section>

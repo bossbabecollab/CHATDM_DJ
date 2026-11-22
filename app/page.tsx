@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { zernioLink } from "@/lib/zernio-links";
 import {
   GITHUB_URL,
@@ -27,64 +28,31 @@ import { DemoNotice } from "@/components/demo-notice";
 import "./site.css";
 
 export const metadata: Metadata = {
-  title: "OpenReply - Open source Instagram comment-to-DM automation",
+  title: "CHATDM — Instagram DM Automation for DJs, Producers & Creators",
   description:
-    "A free, self-hosted ManyChat alternative. Turn Instagram keyword comments into automatic private replies. Connect through your own Meta app or optional paid provider Zernio.",
+    "Turn Instagram comments on your reels into Spotify streams, ticket sales, track ID drops, and booking requests. Automated private replies built for the music industry.",
 };
 
 const faqs: Array<{ q: string; a: React.ReactNode }> = [
   {
-    q: "Is OpenReply free?",
-    a: "Yes. OpenReply is MIT-licensed software with no software subscription or seat limits. You pay for your own infrastructure and any optional services you choose, including Zernio.",
+    q: "What is CHATDM?",
+    a: "CHATDM is an automated Instagram comment-to-DM platform built specifically for DJs, music producers, record labels, and event curators. It instantly sends track links, tickets, sample packs, or booking riders when fans comment on your posts or reels.",
   },
   {
-    q: "Can I use the public demo to send DMs?",
-    a: (
-      <>
-        No. Deploy your own instance first. The public demo shows the interface;
-        it is not a hosted automation service. The{" "}
-        <a href={SETUP_DOCS_URL}>setup guide</a> walks through both processes,
-        the databases, and your provider choice.
-      </>
-    ),
-  },
-  {
-    q: "Do I need Zernio?",
-    a: (
-      <>
-        No. Zernio is an optional paid connection provider and sponsor. It can
-        spare you setting up your own Meta app, while OpenReply still runs on
-        your infrastructure. The direct Meta path stays available.{" "}
-        <a
-          href={zernioLink({ placement: "landing-faq" })}
-          rel="sponsored noopener noreferrer"
-          target="_blank"
-        >
-          Learn about Zernio
-        </a>
-        .
-      </>
-    ),
+    q: "How does it help DJs and producers?",
+    a: "Instead of losing listeners to 'link in bio', fans who comment keywords like 'ID', 'TRACK', or 'VIP' get instant automated DMs with your Spotify link, ticket portal, or booking rider.",
   },
   {
     q: "Does it work with TikTok, Facebook, or WhatsApp?",
-    a: "No. OpenReply is built for Instagram only. It handles comments on posts and reels, direct messages, and text replies to Stories.",
+    a: "CHATDM is built for Instagram. It handles comments on posts and reels, direct messages, and text replies to Stories via the official Meta Graph API.",
   },
   {
     q: "Which Instagram accounts can I connect?",
-    a: "Instagram Business and Creator accounts. Personal accounts are not supported. Connections use the official API, and Instagram’s platform policies still apply.",
+    a: "Instagram Professional accounts (Creator and Business). Connections use the official Meta API, and Instagram platform policies and rate limits apply.",
   },
   {
-    q: "Are there differences between providers?",
-    a: (
-      <>
-        Yes. With Zernio, the post picker shows the latest 25 posts. Reporting
-        needs its analytics add-on and synced data, and follower snapshots can
-        be up to 24 hours old. Inbox previews are omitted when message direction
-        is unavailable; opening threads and replying are supported. Read the{" "}
-        <a href={ZERNIO_DOCS_URL}>provider guide</a> before choosing.
-      </>
-    ),
+    q: "Is there a Free plan?",
+    a: "Yes! CHATDM offers a generous Free tier to get started, and a Pro plan at $19/month for unlimited campaigns, advanced link tracking, and follow gates.",
   },
 ];
 
@@ -100,27 +68,22 @@ export default function Home() {
         {/* Hero */}
         <section className="wrap hero">
           <h1 className="heading-1">
-            Turn Instagram comments
-            <br className="desktop-break" /> into private replies.
+            Turn reel comments
+            <br className="desktop-break" /> into streams & bookings.
           </h1>
           <p className="hero-sub body-3">
-            When someone comments a keyword on your post or reel, OpenReply
-            sends them a DM automatically. Free, open source, self-hosted.
+            When a fan comments on your DJ reel or festival clip, CHATDM drops the track ID, guestlist link, or booking rider straight into their DMs instantly.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-primary btn-lg button-md" href={SETUP_DOCS_URL}>
-              Set up OpenReply <ArrowUpRightIcon />
-            </a>
+            <Link className="btn btn-primary btn-lg button-md" href="/login" style={{ background: "#673DE6" }}>
+              Start with CHATDM <ArrowUpRightIcon />
+            </Link>
             <a className="link button-sm" href="#how">
               See how it works <ArrowDownIcon />
             </a>
           </div>
-          <a className="hero-stars body-5" href={GITHUB_URL}>
-            <StarIcon />
-            The most starred open source ManyChat alternative on GitHub
-          </a>
-          <div className="hero-sponsor">
-            <SponsorCredit placement="landing-hero" />
+          <div className="hero-stars body-5 text-[#673DE6] font-medium flex items-center gap-2">
+            <span>⚡ Built for DJs, Electronic Producers & Music Creators</span>
           </div>
 
           <div
@@ -135,18 +98,18 @@ export default function Home() {
                 </div>
                 <div className="stage-cap">
                   <span className="stage-chip caption-4">
-                    Keyword <code>GUIDE</code> matched
+                    Keyword <code>TRACK</code> matched
                   </span>
                 </div>
               </div>
               <div className="stage-mid">
                 <span className="stage-chip caption-4">
-                  Keyword <code>GUIDE</code> matched
+                  Keyword <code>TRACK</code> matched
                 </span>
                 <span className="stage-line" aria-hidden="true" />
-                <span className="stage-chip caption-4">Private reply</span>
+                <span className="stage-chip caption-4">Instant DM Sent</span>
                 <span className="stage-note caption-5">
-                  Sent through the official Instagram API
+                  Spotify link + presave delivered
                 </span>
               </div>
               <div className="stage-col stage-col-right">
@@ -164,24 +127,23 @@ export default function Home() {
           </div>
 
           <p className="hero-support caption-4">
-            Instagram only. Works with Business and Creator accounts, on post
-            and reel comments, DMs, and Story replies.
+            Instagram Creator & Business accounts. Works on post comments, reel comments, DMs, and Story replies.
           </p>
           <ul className="hero-proof">
-            <li>MIT licensed</li>
-            <li>Official Instagram API</li>
+            <li>Official Meta API</li>
             <li>No password sharing</li>
-            <li>Your campaigns, in your database</li>
+            <li>Instant Track & Ticket Drops</li>
+            <li>100% Account Safe</li>
           </ul>
         </section>
 
         {/* Tagline reveal */}
-        <section className="tagline wrap" aria-label="What OpenReply does">
+        <section className="tagline wrap" aria-label="What CHATDM does">
           <TaglineReveal
             lines={[
-              "Someone comments GUIDE.",
-              "The link is in their inbox",
-              "before they scroll to the next post.",
+              "Fan comments TRACK.",
+              "Your Spotify or Soundcloud link",
+              "is in their DMs before the drop ends.",
             ]}
           />
         </section>
@@ -191,8 +153,7 @@ export default function Home() {
           <Reveal className="section-head">
             <h2 className="heading-4">How it works</h2>
             <p className="body-3">
-              Send a product link or your latest guide when someone comments.
-              You decide what starts the conversation and what happens next.
+              Drop unreleased IDs, VIP guestlists, sample packs, or your booking rider when fans comment. You set the keywords, CHATDM handles the crowd.
             </p>
           </Reveal>
           <div className="steps">

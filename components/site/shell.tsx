@@ -37,10 +37,10 @@ export function SiteFooter() {
           <div>
             <Link href="/" className="wordmark">
               <LogoMark className="wordmark-mark" />
-              <span>OpenReply</span>
+              <span>CHATDM</span>
             </Link>
             <p className="caption-5">
-              Open source Instagram comment-to-DM automation.
+              Instagram comment-to-DM automation for DJs & music creators.
             </p>
             <ul className="footer-social">
               <li>
