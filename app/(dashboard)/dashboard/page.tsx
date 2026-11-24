@@ -114,6 +114,37 @@ export default function DashboardPage() {
         )}
       </div>
 
+      {/* Onboarding Quick-Start when no accounts connected */}
+      {connectedCount === 0 && (
+        <div className="panel rounded-xl p-5 sm:p-6 border border-[#673DE6]/30 bg-[#673DE6]/5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="text-base">🎵</span>
+              <h2 className="text-base font-semibold text-foreground">
+                Turn reel comments into streams & bookings
+              </h2>
+            </div>
+            <p className="mt-1 text-sm text-muted">
+              {t("Connect an Instagram professional account to launch campaigns.")}
+            </p>
+          </div>
+          <div className="flex items-center gap-3 shrink-0">
+            <a
+              href="/api/instagram/connect"
+              className="px-4 py-2 rounded-lg bg-accent hover:bg-accent-hover text-white text-sm font-medium transition-colors"
+            >
+              {t("Connect Instagram")}
+            </a>
+            <a
+              href="/campaigns/new"
+              className="px-4 py-2 rounded-lg border border-border hover:bg-surface-hover text-foreground text-sm font-medium transition-colors"
+            >
+              {t("New Campaign")}
+            </a>
+          </div>
+        </div>
+      )}
+
       {/* Stat Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 sm:gap-4">
         <StatCard
@@ -140,7 +171,7 @@ export default function DashboardPage() {
                     the bar sits in a wrapper that fills the column's free space. */}
                 <div className="w-full min-h-0 flex-1 flex items-end">
                   <div
-                    className="w-full rounded-sm bg-accent min-h-[4px]"
+                    className="w-full rounded-t-sm bg-accent min-h-[4px] transition-opacity hover:opacity-85"
                     style={{ height: `${Math.max((day.count / maxDM) * 100, 4)}%` }}
                   />
                 </div>

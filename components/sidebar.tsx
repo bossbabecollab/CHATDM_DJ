@@ -79,15 +79,18 @@ export default function Sidebar({
                 onClick={onClose}
                 aria-current={isActive ? "page" : undefined}
                 className={`
-                  block px-3 py-2.5 rounded text-sm
+                  group flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors
                   ${
                     isActive
-                      ? "bg-surface-hover text-foreground font-medium"
+                      ? "bg-[#673DE6]/10 text-[#673DE6] font-semibold"
                       : "text-muted hover:text-foreground hover:bg-surface-hover"
                   }
                 `}
               >
-                {t(item.label)}
+                <span>{t(item.label)}</span>
+                {isActive && (
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#673DE6]" />
+                )}
               </Link>
             );
           })}

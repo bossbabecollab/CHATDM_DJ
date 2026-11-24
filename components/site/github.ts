@@ -8,7 +8,7 @@ import {
 
 export type { Contributor };
 
-export const GITHUB_URL = "https://github.com/diwenne/openreply";
+export const GITHUB_URL = "https://github.com/bossbabecollab/CHATDM";
 export const SETUP_DOCS_URL = `${GITHUB_URL}/blob/main/docs/setup.md`;
 export const ZERNIO_DOCS_URL = `${GITHUB_URL}/blob/main/docs/zernio.md`;
 export const SUPPORT_URL = "https://buymeacoffee.com/diwen";

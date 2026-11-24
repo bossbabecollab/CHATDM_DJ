@@ -19,12 +19,13 @@ interface StatCardProps {
 export default function StatCard({ label, value, trend, trendUp }: StatCardProps) {
   const { t } = useI18n();
   return (
-    <div className="panel rounded p-4">
-      <p className="text-sm text-muted">{label}</p>
-      <p className="text-2xl font-semibold text-foreground mt-1">{value}</p>
+    <div className="panel rounded-xl p-4 sm:p-5 transition-all duration-150 hover:border-border-hover">
+      <p className="text-xs font-medium uppercase tracking-wider text-muted">{label}</p>
+      <p className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground mt-1.5">{value}</p>
       {trend && (
-        <p className={`text-xs mt-1 ${trendUp ? "text-success" : "text-error"}`}>
-          {trendUp ? t("Up") : t("Down")} {trend}
+        <p className={`text-xs font-medium mt-1.5 flex items-center gap-1 ${trendUp ? "text-success" : "text-error"}`}>
+          <span>{trendUp ? "↑" : "↓"}</span>
+          <span>{trendUp ? t("Up") : t("Down")} {trend}</span>
         </p>
       )}
     </div>
