@@ -141,10 +141,8 @@ export default function Home() {
         <section className="tagline wrap" aria-label="What CHATDM does">
           <TaglineReveal
             lines={[
-              "Pick a trigger word like TRACK or GUESTLIST.",
-              "The second a fan comments it on your post,",
-              "CHATDM sends your Spotify link, SoundCloud private track,",
-              "or ticket link straight to their inbox.",
+              "Set a keyword like TRACK or GUESTLIST—",
+              "CHATDM automatically DMs your links the moment fans comment.",
             ]}
           />
         </section>
