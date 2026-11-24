@@ -75,15 +75,15 @@ export default function Home() {
             When a fan comments on your DJ reel or festival clip, CHATDM drops the track ID, guestlist link, or booking rider straight into their DMs instantly.
           </p>
           <div className="hero-actions">
-            <Link className="btn btn-primary btn-lg button-md" href="/login" style={{ background: "#673DE6" }}>
+            <Link className="btn btn-primary btn-lg button-md" href="/login">
               Start with CHATDM <ArrowUpRightIcon />
             </Link>
             <a className="link button-sm" href="#how">
               See how it works <ArrowDownIcon />
             </a>
           </div>
-          <div className="hero-stars body-5 text-[#673DE6] font-medium flex items-center gap-2">
-            <span>⚡ Built for DJs, Electronic Producers & Music Creators</span>
+          <div className="hero-stars" style={{ display: "flex", justifyContent: "center" }}>
+            <span className="hero-badge">⚡ Built for DJs, Electronic Producers & Music Creators</span>
           </div>
 
           <div
