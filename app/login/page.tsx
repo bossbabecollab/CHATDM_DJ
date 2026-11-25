@@ -40,7 +40,7 @@ export default async function LoginPage({
             <div className="auth-head">
               <h1 className="heading-5">{t("Sign-in is off on this demo")}</h1>
               <p className="body-6">
-                {t("This is the public demo — it doesn’t create real accounts or send DMs. To use OpenReply for real, clone it and run your own instance with your own Meta app and domain.")}
+                This is the public demo — it doesn’t create real accounts or send DMs. To use CHATDM for real, clone it and run your own instance with your own Meta app and domain.
               </p>
             </div>
             <a

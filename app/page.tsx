@@ -251,7 +251,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="step-text">
-                <h3 className="heading-6">3. OpenReply handles the rest</h3>
+                <h3 className="heading-6">3. CHATDM handles the rest</h3>
                 <p className="body-6">
                   Incoming events trigger your campaigns. A background worker
                   queues, rate-limits, and logs each send, with retries and
@@ -310,7 +310,7 @@ export default function Home() {
               <div className="cell-text">
                 <h3 className="heading-6">Inbox</h3>
                 <p className="body-6">
-                  Read conversations and reply from OpenReply, within
+                  Read conversations and reply from CHATDM, within
                   Instagram’s messaging window.
                 </p>
               </div>
@@ -385,7 +385,7 @@ export default function Home() {
             <div>
               <h2 className="heading-4">Open code you can inspect.</h2>
               <p className="body-6">
-                OpenReply owns the campaigns, keyword matching, queues, retries,
+                CHATDM owns the campaigns, keyword matching, queues, retries,
                 logs, and inbox. Your connection provider handles the Instagram
                 API.
               </p>
@@ -416,10 +416,10 @@ export default function Home() {
         {/* Setup */}
         <section id="setup" className="section wrap" style={{ scrollMarginTop: 96, paddingTop: 16 }}>
           <Reveal className="section-head">
-            <h2 className="heading-4">Self-host OpenReply. Choose your connection.</h2>
+            <h2 className="heading-4">Self-host CHATDM. Choose your connection.</h2>
             <p className="body-3">
               Both options need your own web app, background worker, PostgreSQL,
-              and Redis. OpenReply is free software; hosting and provider costs
+              and Redis. CHATDM is free software; hosting and provider costs
               are separate.
             </p>
           </Reveal>
@@ -435,8 +435,8 @@ export default function Home() {
                 choose a profile, and connect your account.
               </p>
               <ul className="body-6">
-                <li>No Meta app secrets to configure in OpenReply</li>
-                <li>OpenReply registers the webhook for you</li>
+                <li>No Meta app secrets to configure in CHATDM</li>
+                <li>CHATDM registers the webhook for you</li>
                 <li>Optional paid service and project sponsor</li>
               </ul>
               <div className="provider-links">
@@ -501,7 +501,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary btn-lg button-md" href={SETUP_DOCS_URL}>
-                Set up OpenReply <ArrowUpRightIcon />
+                Set up CHATDM <ArrowUpRightIcon />
               </a>
               <a className="link button-sm" href={GITHUB_URL}>
                 Star on GitHub <ArrowUpRightIcon />
